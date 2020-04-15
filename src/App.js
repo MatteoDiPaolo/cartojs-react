@@ -30,7 +30,6 @@ class App extends Component {
         <Logo/>
         <Map center={center} zoom={zoom} ref={node => { this.map = node && node.leafletElement }}>
           <Basemap attribution="" url={CARTO_BASEMAP} />
-
           <Layer
             map={map}
             source={merged.source}
@@ -39,7 +38,6 @@ class App extends Component {
             hidden={false}
           />
         </Map>
-
         <Description/>
       </main>
     );

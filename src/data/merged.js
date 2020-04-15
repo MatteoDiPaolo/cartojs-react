@@ -10,7 +10,6 @@ export default {
         marker-line-opacity: 1;
       }
     `,
-
   source:
     `
       SELECT * FROM merged

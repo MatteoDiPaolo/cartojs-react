@@ -1,12 +1,7 @@
 import { Component } from 'react';
-import PropTypes from 'prop-types';
 import carto from '@carto/carto.js/carto';
 
 class Layer extends Component {
-  static contextTypes = {
-    map: PropTypes.object,
-  };
-
   constructor(props) {
     super(props);
 
