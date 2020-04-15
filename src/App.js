@@ -10,12 +10,14 @@ import './App.css';
 const CARTO_BASEMAP = 'https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}.png';
 
 class App extends Component {
+  // Defines Map basic info
   state = {
-    center: [47.5, 19.05],
-    zoom: 12,
     map: undefined,
+    center: [47.47, 19.13],
+    zoom: 11,
   }
 
+  // Defines the entry point to communicate with Carto
   cartoClient = new carto.Client({ 
     apiKey: process.env.REACT_APP_CARTO_API_KEY, 
     username: process.env.REACT_APP_CARTO_USER_NAME 
@@ -26,7 +28,7 @@ class App extends Component {
   }
 
   render() {
-    const { center, zoom, map } = this.state;
+    const { map, center, zoom } = this.state;
 
     return (
       <main>
