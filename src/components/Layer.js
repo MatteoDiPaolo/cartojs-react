@@ -19,10 +19,10 @@ class Layer extends Component {
   }
 
   componentDidMount() {
-    const { client, nativeMap } = this.props;
+    const { client, map } = this.props;
 
     client.addLayer(this.layer);
-    client.getLeafletLayer().addTo(nativeMap);
+    client.getLeafletLayer().addTo(map);
   }
 
   render() {

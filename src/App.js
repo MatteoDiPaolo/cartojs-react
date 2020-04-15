@@ -13,26 +13,26 @@ class App extends Component {
   state = {
     center: [47.5, 19.05],
     zoom: 12,
-    nativeMap: undefined,
+    map: undefined,
   }
 
   cartoClient = new carto.Client({ apiKey: '349731705c02ac8b74579ec7a62f4baf7272df84', username: 'matteodipaolo' });
 
   componentDidMount() {
-    this.setState({ nativeMap: this.nativeMap });
+    this.setState({ map: this.map });
   }
 
   render() {
-    const { center, zoom } = this.state;
+    const { center, zoom, map } = this.state;
 
     return (
       <main>
         <Logo/>
-        <Map center={center} zoom={zoom} ref={node => { this.nativeMap = node && node.leafletElement }}>
+        <Map center={center} zoom={zoom} ref={node => { this.map = node && node.leafletElement }}>
           <Basemap attribution="" url={CARTO_BASEMAP} />
 
           <Layer
-            nativeMap={this.nativeMap}
+            map={map}
             source={merged.source}
             style={merged.style}
             client={this.cartoClient}
