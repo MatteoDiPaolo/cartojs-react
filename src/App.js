@@ -16,7 +16,10 @@ class App extends Component {
     map: undefined,
   }
 
-  cartoClient = new carto.Client({ apiKey: '349731705c02ac8b74579ec7a62f4baf7272df84', username: 'matteodipaolo' });
+  cartoClient = new carto.Client({ 
+    apiKey: process.env.REACT_APP_CARTO_API_KEY, 
+    username: process.env.REACT_APP_CARTO_USER_NAME 
+  });
 
   componentDidMount() {
     this.setState({ map: this.map });
