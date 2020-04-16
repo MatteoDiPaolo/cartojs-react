@@ -15,7 +15,9 @@ Let's say that leaflet if the pillar on top of which carto acts in order to prov
 - The layer data source is hosted in Carto and retrieved using __[carto.source.SQL](https://carto.com/developers/carto-js/reference/#cartosourcesql)__
 - The layer visualization styling is defined using __[CartoCss](https://carto.com/developers/styling/cartocss/)__
 
-You can access the app __[here](https://matteodipaolo.github.io/cartojs-react/)__
+You can access the app __[here](https://MatteoDiPaolo.github.io/cartojs-react/)__
+
+![README_1.png](https://github.com/MatteoDiPaolo/cartojs-react/raw/master/README_1.png)
 
 
 # How to run
