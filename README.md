@@ -1,68 +1,32 @@
+# Description
+
+This simple app is intended to showcase the integration of the funcionalities of Carto in a React application.
+
+The following one are the main actors involved:
+- [React](https://reactjs.org/)
+- [React-Leaflet](https://react-leaflet.js.org/)
+- [Leaflet](https://leafletjs.com/)
+- [Carto.js](https://carto.com/developers/carto-js/)
+
+The app itself is made of nothing more than a leaflet map with one layer both powered by carto.js. 
+
+Let's say that leaflet if the pillar on top of which carto acts in order to provide data visualization capabilities to the user.
+- The base map tiles are provided by __[Carto basemaps data service](https://carto.com/location-data-services/basemaps/)__
+- The layer data source is hosted in Carto and retrieved using __[carto.source.SQL](https://carto.com/developers/carto-js/reference/#cartosourcesql)__
+- The layer visualization styling is defined using __[CartoCss](https://carto.com/developers/styling/cartocss/)__
+
+You can access the app __[here](https://matteodipaolo.github.io/cartojs-react/)__
+
+
+# How to run
+
+- `npm i`
+- Set en variables:
+    - `REACT_APP_CARTO_API_KEY`
+    - `REACT_APP_CARTO_USER_NAME`
+- `npm start`
+
+
+# Notes
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

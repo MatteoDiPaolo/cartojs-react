@@ -16,6 +16,8 @@ class Layer extends Component {
     client.getLeafletLayer().addTo(map);
   }
 
+  // ... missing methods to handle styles/source updates
+
   render() {
     return null;
   }
