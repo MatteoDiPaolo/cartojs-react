@@ -4,7 +4,7 @@ import carto from '@carto/carto.js/carto';
 import Logo from './components/Logo';
 import Layer from './components/Layer';
 import Description from './components/Description';
-import merged from './data/merged';
+import data from './data/layer';
 import './App.css';
 
 const CARTO_BASEMAP = 'https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}.png';
@@ -37,8 +37,8 @@ class App extends Component {
           <Basemap attribution="" url={CARTO_BASEMAP} />
           <Layer
             map={map}
-            source={merged.source}
-            style={merged.style}
+            source={data.source}
+            style={data.style}
             client={this.cartoClient}
             hidden={false}
           />

@@ -22,11 +22,12 @@ You can access the app __[here](https://MatteoDiPaolo.github.io/cartojs-react/)_
 
 # How to run
 
-- `npm i`
-- Set en variables:
-    - `REACT_APP_CARTO_API_KEY`
-    - `REACT_APP_CARTO_USER_NAME`
-- `npm start`
+1. `npm i`
+2. Set en variables:
+    - __REACT_APP_CARTO_API_KEY__
+    - __REACT_APP_CARTO_USER_NAME__
+3. Define layer data __source__ and __style__ in __*src/data/layer.js*__
+4. `npm start`
 
 
 # Notes
